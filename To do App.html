@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do App</title>
+  </head>
+  <body>
+    <div class="box">
+        <div class="title">Xiao-Zan的自学html展示</div>
+        <div class="input">
+          <input class="to-input" type="text" placeholder="在这里输入...">
+          <div class="to-botton">请输入</div>
+        </div>
+        <div class="item completed">
+            <div>
+              <input type="checkbox">
+              <span class="name">吃饭</span>
+            </div>
+            <div class="del">删除</div>
+        </div>
+        <div class="item">
+            <div>
+              <input type="checkbox">
+              <span class="name">刷牙</span>
+            </div>
+            <div class="del">删除</div>
+        </div>
+        <div class="item">
+            <div>
+              <input type="checkbox">
+              <span class="name">睡觉</span>
+            </div>
+            <div class="del">删除</div>
+        </div>
+    </div>
+    <style>
+        .completed{
+            text-decoration: line-through;
+            opacity: 0.4;
+        }
+        .del{
+            color: red;
+        }
+        .item{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-sizing: border-box;
+            width: 50%;
+            height: 50px;
+            margin: 15px auto;
+            padding: 16px;
+            border-radius: 20px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 20px;
+        }
+        .to-botton{
+            padding-left: 15px;
+            background:linear-gradient(
+            to right,
+            rgb(94, 5, 145),
+            rgb(57, 85, 240)
+            );
+            outline: none;
+            width: 10%;
+            height: 50px;
+            border-radius: 0 20px 20px 0;
+            color: #ffff;
+            line-height: 50px;
+            cursor: pointer;
+            user-select: none;
+        }
+        .to-input{
+            padding-left: 15px;
+            border: 1px solid #dfe1e5;
+            outline: none;
+            width: 60%;
+            height: 50px;
+            border-radius: 20px 0 0 20px;
+            margin-bottom: 20px;
+        }
+        .input{
+            display: flex;
+            margin-top: 8%;
+            margin-left: 20%;
+        }
+        body {
+          background:linear-gradient(
+            to right,
+            rgb(94, 5, 145),
+            rgb(57, 85, 240)
+          );
+        }
+        .box {
+          width: 98%;
+          height: 500px;
+          background-color: #ffff;
+          border-radius: 20px;
+          padding-top: 30px;
+          box-sizing: border-box;
+          margin-top: 40px;
+          margin-left: 1%;
+        }
+        .title{
+            font-size: 30px;
+            font-weight: 700;
+            text-align: center;
+        }
+    </style>
+  </body>
+</html>
