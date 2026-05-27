@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 变量
+        let str = "123 JavaScript 自学"
+        let num = 123456
+        let bool1 = true
+        let bool2 = false
+        // 修改变量
+        str = "修改字符串 JavaScript 自学"
+        // 输出变量
+        console.log("hello html")
+        console.log(str, num, bool1, bool2)
+
+        // 对象
+        let obj = {
+            name: "小赞",
+            age: 18,
+            bool: true
+        }
+        // 修改对象属性
+        obj = {
+            name: "小美",
+            age: 20,
+        }
+        obj.name = "小赞自学"
+        obj.bool = false
+        obj.add = true
+        // 输出对象属性
+        console.log(obj.name, obj.age, obj.bool,obj.add)
+        // 删除对象属性
+        delete obj.add
+        // 输出对象
+        console.log(obj)
+
+        // 数组
+        let arr = [1,2,3,3,5]
+        // 索引
+        console.log(arr[0], arr[1],arr[2])
+        // 修改添加数组元素
+        arr[2] = 4
+        arr.push(6)         //在数组末尾添加
+        arr.unshift(0)      //在数组首位添加
+        arr.splice(3,0,2.5) //在索引三的位置添加一个2.5，原来元素向后移动，若第二个参数不为零则删除原来元素
+        // 打印数组
+        console.log(arr)
+
+        // 数字运算
+        let num1 = 4
+        let num2 = 6
+        console.log(num1 + num2)
+        console.log(num1 - num2)
+        console.log(num1 * num2)
+        console.log(num1 / num2)
+        console.log(num1++)      //先使用变量值，随后加1
+        console.log(++num1)      //先加1，随后使用变量值
+        console.log(num1--)      //同理
+        console.log(num1)
+        console.log(num==str);   //等于，数据值相等
+        console.log(num===str);  //绝对等于，同下
+        console.log(num!=str);   //不等于
+        console.log(num!==str);  //不绝对等于，数据类型和数据值均不相等
+
+        // 字符串拼接
+        let str1 = "hello" 
+        let str2 = "html"
+        console.log(str1 +' '+ str2);
+
+        // 逻辑运算 和 或 取反
+        console.log(true && true);    //true
+        console.log(true && false);   //false
+        console.log(false && false);  //false
+        
+        console.log(true || true);    //true
+        console.log(true || false);   //true
+        console.log(false || false);  //false
+
+        console.log(!true);           //false
+        console.log(!false);          //true
+        
+        // if 语句
+        if (true) {
+            console.log("bool值为true,执行代码");   
+        }
+        else {
+            console.log("bool值为false，执行else代码");
+        }
+
+        // for 循环
+        for (let i=0; i<3; i++){
+            console.log("你好");
+        }
+        let arr1 = ["鸡","你","太","美"]
+        console.log(arr1.length);  
+        for (let i=0; i < arr1.length; i++){
+            console.log(arr1[i]);
+        }
+        
+        //方法（函数）
+        function add(a,b) {
+            let num =a + b
+            console.log(num);
+            console.log("Hello");
+            return num
+            console.log("Html"); 
+        }
+        add(12,13)
+        console.log(add(2,3));
+        
+    </script>
+</body>
+</html>
